@@ -54,4 +54,12 @@ class CalculatorTest {
 
         assertEquals(3.5, subtract);
     }
+
+    @Test
+    void fib() {
+        Calculator calculator = new Calculator();
+        long fib = calculator.fib(7);
+
+        assertEquals(21, fib);
+    }
 }

@@ -34,4 +34,20 @@ public class Calculator {
 
         return sum;
     }
+
+    public long fib(int x) {
+        int number1 = 1;
+        int number2 = 1;
+
+        int fib = 0;
+
+        for (int i = 1; i < x; i++) {
+
+            fib = number1 + number2;
+            number2 = number1;
+            number1 = fib;
+        }
+
+        return fib;
+    }
 }
